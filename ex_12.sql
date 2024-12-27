@@ -1,0 +1,1 @@
+SELECT * FROM movie INNER JOIN distributor ON movie.id_distributor = distributor.id INNER JOIN movie_genre ON movie.id = id_genre INNER JOIN genre ON id_genre = genre.id WHERE distributor.name IN ('Columbia Pictures','Paramount Pictures') AND genre.name LIKE "%y%";
